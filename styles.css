@@ -1,0 +1,99 @@
+body {
+  font-family: 'IM Fell English', serif;
+  font-size: 16px;
+  width: 780px;
+  margin: 0 auto;
+  display: table;
+}
+
+/*TITLES*/
+.title {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+.title.sub {
+  margin-top: 0px;
+}
+.source {
+  font-size: .8em;
+  font-style: italic;
+}
+.source.left {
+  float: left;
+}
+.source.right {
+  float: right;
+}
+
+/*CHART*/
+.chart {
+  margin-top: 20px;
+  border-top: 2px solid #000;
+}
+
+/*LINES*/
+.line {
+  fill: none;
+  stroke-width: .2em;
+}
+.line-thin {
+  fill: none;
+  stroke-width: .05em;
+  stroke: #000;
+}
+.line.exports {
+  stroke: #b94242;
+}
+.line.imports {
+  stroke: #d8b826;
+}
+.line-text {
+  font-size: .8em;
+}
+#exports-line {
+  fill: none;
+  stroke: #000;
+}
+
+/*AXES*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+.axis path {
+  stroke: #000;
+  stroke-width: .2em;
+}
+.x.axis path {
+  display: none;
+}
+.x.axis g.tick:first-of-type line,.y.axis g.tick:first-of-type line {
+  stroke: #000;
+  stroke-width:.2em;
+}
+.axis.label {
+  fill: #000;
+  font-size: 1em;
+  font-family: 'IM Fell English', serif;
+}
+.tick text {
+  font-family: 'IM Fell English', serif;
+}
+
+/*AREA*/
+.surplus {
+  fill-opacity: .5;
+}
+.surplus.import {
+  fill: #d9a074;
+}
+.surplus.export {
+  fill: #dbbdbc;
+}
+#area-text {
+  font-family: 'IM Fell DW Pica SC', serif;
+}
